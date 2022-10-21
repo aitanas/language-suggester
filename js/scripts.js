@@ -26,7 +26,7 @@ function getResult (event) {
 // oneFear: birds, snakes, words
 // colors: number thresholds, i.e. >=1000, >9000
 if (name && whatProgram && whyProgram && oneFear && convertedHex) {
-  if (whatProgram === apps || whatProgram === bees && oneFear != snakes) {
+  if (whatProgram === apps && oneFear === !snakes) {
     document.getElementById("pythonResult").removeAttribute("class");
     document.querySelector("span#nameHere").innerText = name; 
   } else if (whatProgram === webpages && oneFear === snakes || birds) {
@@ -35,7 +35,7 @@ if (name && whatProgram && whyProgram && oneFear && convertedHex) {
   } else if (whatProgram === iOS && oneFear === words || snakes) {
     document.getElementById("swiftResult").removeAttribute("class");
     document.querySelector("span#nameHere").innerText = name;
-  } else {
+  } else if (whatProgram === bees) {
     document.getElementById("csharpResult").removeAttribute("class");
     document.querySelector("span#nameHere").innerText = name;
   }
