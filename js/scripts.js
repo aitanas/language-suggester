@@ -20,20 +20,16 @@ function getResult (event) {
   convertedHex = Math.floor(parseInt(convertedHex, 16)) / 1000; // makes converted hex a float value 0-~1500
   convertedHex = parseInt(convertedHex);
 
-document.querySelector("span.nameHere").innerText = name;
+  document.querySelector("span.nameHere").innerText = name;
 
 // branching logic
 if ((whatProgram === "apps" || whatProgram === "bees") && oneFear != "snakes") {
-  document.querySelector("span.nameHere").innerText = name;
   document.getElementById("pythonResult").removeAttribute("class");
 } else if (whatProgram === "webpages" && oneFear != "words") {
-  document.querySelector("span.nameHere").innerText = name;
   document.getElementById("javascriptResult").removeAttribute("class");
 } else if ((whatProgram === "iOS" || whatProgram === "webpages") && oneFear != "birds") {
-  //document.querySelector("span#nameHere").innerText = name;
   document.getElementById("swiftResult").removeAttribute("class");
 } else if (whatProgram === "bees" || whatProgram === "apps" || whatProgram === "iOS") {
- // document.querySelector("span#nameHere").innerText = name;
   document.getElementById("csharpResult").removeAttribute("class");
 } else {
   document.getElementById("errorResult").removeAttribute("class");
