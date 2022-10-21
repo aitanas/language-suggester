@@ -5,17 +5,22 @@
 h3 {
   font-size: 1.9rem;
   font-weight: 300;
+  line-height: 3rem;
 }
 
 #form {
-  float: left;
   font-size: 1.25rem;
-  max-width: 620px;
+  padding-left: .8rem;
+  padding-right: .8rem;
 }
 
-.radioSection, .nameSection {
-  padding: .8rem;
-  line-height: 1.8rem;
+.form-control {
+  width: 50%;
+}
+
+.jumbotron {
+  background-image: linear-gradient(#AA0000, #ffa564, #fff);
+  border-radius: 0rem;
 }
 
 .colorPicker {
@@ -23,6 +28,10 @@ h3 {
   line-height: 1.8rem;
   display: block;
   background-color: rgba(153, 101, 122, 0.796);
+  border-radius: .75rem;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  width: 50%;
 }
 
 #pythonResult, #swiftResult, #javascriptResult, #csharpResult {
@@ -38,4 +47,5 @@ h3 {
   background-color: #d804043b;
   padding: .8rem;
   margin: .8rem;
+  
 }
