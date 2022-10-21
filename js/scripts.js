@@ -21,29 +21,28 @@ function getResult (event) {
   convertedHex = parseInt(convertedHex);
 
 // branching logic
-// program: websites, apps, iOS, bees
-// whyProgram: genuine lols money confusion
-// oneFear: birds, snakes, words
-// colors: number thresholds, i.e. >=1000, >9000
-if (name && whatProgram && whyProgram && oneFear && convertedHex) {
-  if (whatProgram === apps && oneFear === !snakes) {
-    document.getElementById("pythonResult").removeAttribute("class");
-    document.querySelector("span#nameHere").innerText = name; 
-  } else if (whatProgram === webpages && oneFear === snakes || birds) {
-    document.getElementById("javascriptResult").removeAttribute("class");
-    document.querySelector("span#nameHere").innerText = name;
-  } else if (whatProgram === iOS && oneFear === words || snakes) {
-    document.getElementById("swiftResult").removeAttribute("class");
-    document.querySelector("span#nameHere").innerText = name;
-  } else if (whatProgram === bees) {
-    document.getElementById("csharpResult").removeAttribute("class");
-    document.querySelector("span#nameHere").innerText = name;
-  }
+  document.getElementById("nameHere").innerText = name; 
+  //document.querySelector("span#nameHere").innerText = name; 
+
+if ((whatProgram === "apps" || whatProgram === "bees") && oneFear != "snakes") {
+  document.getElementById("nameHere").innerText = name; 
+  document.getElementById("pythonResult").removeAttribute("class");
+} else if (whatProgram === "webpages" && oneFear != "words") {
+  document.getElementById("nameHere").innerText = name; 
+  document.getElementById("javascriptResult").removeAttribute("class");
+} else if ((whatProgram === "iOS" || whatProgram === "webpages") && oneFear != "birds") {
+  document.getElementById("nameHere").innerText = name; 
+  document.getElementById("swiftResult").removeAttribute("class");
+} else if (whatProgram === "bees" || whatProgram === "apps" || whatProgram === "iOS") {
+  document.getElementById("nameHere").innerText = name; 
+  document.getElementById("csharpResult").removeAttribute("class");
 } else {
   document.getElementById("errorResult").removeAttribute("class");
 }
+//}
 }
 
 window.addEventListener("load", function() {
-  document.getElementById("form").addEventListener("submit", getResult);
+  let form = document.querySelector("form");
+  form.addEventListener("submit", getResult);
 }); 
