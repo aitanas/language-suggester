@@ -1,37 +1,53 @@
-# _{Application Name}_
+# Programming Language Selector
 
-#### By _**{List of contributors}**_
+#### By Aitana Shough
 
-#### _{Brief description of application}_
+#### This is an application that selects a programming language for the user after a short quiz. Created for Epicodus's second independent project, this application utilizes JavaScript branching, event listeners, and API web selectors.
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
-## Description
-
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+* HTML/CSS
+* JavaScript
+* Markdown
+* Bootstrap
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+This project may be viewed online via the corresponding [**GitHub pages site**](https://aitanas.github.io/language-suggester/).
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+Alternatively, you may clone this project to your local machine by using the following command:
+```
+git clone https://github.com/aitanas/language-suggester.git
+```
+Directions after cloning are as follows:
+1. Open the **language-suggester** directory.
+2. Open the file named **index.html** with an internet browser (i.e. Google Chrome) of your choice.
+3. Enjoy!
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* HTML name field is only populated with the "Python" quiz result.
 
 ## License
 
-MIT License
+**MIT License**
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) 2022 Aitana Shough
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
