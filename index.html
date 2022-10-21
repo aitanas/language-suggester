@@ -9,15 +9,17 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Programming Language Suggester</h1>
+      <h1 class="display-4">Programming Language Suggester</h1>
+      <hr class="my-4">
+      <p class="lead">Want to learn to program? Find out which language you should start with right here!</p>
     </div>
     <form id="form">
       <div class="nameSection">
         <label for="name"><h3>Welcome! Please enter your <strong>name</strong>.</h3></label><br>
-        <input type="text" name="name" id="name" placeholder="what's your name?">
+        <input type="text" name="name" id="name" placeholder="nice to meet you :)">
       </div>
       <div class="radioSection">
-        <h3>First and foremost, what would you like to program?</h3>
+        <h3>First and foremost, <strong>what would you program</strong>?</h3>
         <input type="radio" name="whatProgram" value="webpages" id="webpages" checked>
         <label for="webpages">Webpages!</label><br>
         <input type="radio" name="whatProgram" value="apps" id="apps">
@@ -27,13 +29,13 @@
         <input type="radio" name="whatProgram" value="bees" id="bees">
         <label for="bees">Bees?</label><br>
 
-        <h3>Why do you want to program in the first place?</h3>
+        <h3><strong>Why do you want to learn</strong> to program?</h3>
         <input type="radio" name="whyProgram" value="genuine" id="genuine" checked>
         <label for="genuine">Because I genuinely love building things and problem-solving.</label><br>
         <input type="radio" name="whyProgram" value="confusion" id="confusion">
         <label for="confusion">You mean I actually have to do stuff?</label><br>
 
-        <h3>What are you most afraid of?</h3>
+        <h3>What are you <strong>most afraid</strong> of?</h3>
         <input type="radio" name="oneFear" value="birds" id="birds" checked>
         <label for="birds">Birds. Have you <em>seen</em> "Birdemic"? Or Hitchcock's "The Birds"?</label><br>
         <input type="radio" name="oneFear" value="snakes" id="snakes">
@@ -41,29 +43,32 @@
         <input type="radio" name="oneFear" value="words" id="words">
         <label for="words">Wordy programming languages.</label><br>
       </div>
+
       <div class="colorPicker">
         <label for="colorPick"><h3>Pick a color; any color.</h3></label><br>
         <input type="color" name="colorPick" id="colorPick">
       </div>
       <div class="button">
-        <button type="submit">*merida voice* submit for yer fate</button>
+        <button type="submit" class="btn btn-primary">click me, click me!</button>
       </div>
     </form>
 
     <div id="pythonResult" class="hidden">
-      <p>Hey, <span class="nameHere">______</span>. Python result will go here</p>
+      <h3>You should learn <strong>Python</strong>!</h3>
+      <hr class="my-4">
+      <p class="lead text-wrap">Hey, <span class="nameHere">______</span>. Python sounds like a great match for you! Python is a popular language used in many different applications.</p>
     </div>
 
     <div id="csharpResult" class="hidden">
-      <p>Hey, <span class="nameHere">______</span>. C# result will go here</p>
+      <p>Hey there <span class="nameHere"> </span>! C# sounds like a good choice for you.</p>
     </div>
 
     <div id="javascriptResult" class="hidden">
-      <p>Hey, <span class="nameHere">______</span>. JavaScript result will go here</p>
+      <p><span class="nameHere"> </span>, it seems like JavaScript is the language for you!</p>
     </div>
 
     <div id="swiftResult" class="hidden">
-      <p>Hey, <span class="nameHere">______</span>. Swift result will go here</p>
+      <p>Eyyy <span class="nameHere"> </span>, you'd love spreading your wings with Swift!</p>
     </div>
 
     <div id="errorResult" class="hidden">

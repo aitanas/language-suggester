@@ -2,16 +2,40 @@
   display: none;
 }
 
+h3 {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+
+#form {
+  float: left;
+  font-size: 1.25rem;
+  max-width: 620px;
+}
+
+.radioSection, .nameSection {
+  padding: .8rem;
+  line-height: 1.8rem;
+}
+
+.colorPicker {
+  padding: .8rem;
+  line-height: 1.8rem;
+  display: block;
+  background-color: rgba(153, 101, 122, 0.796);
+}
+
 #pythonResult, #swiftResult, #javascriptResult, #csharpResult {
   text-align: justify;
   float: right;
+  font-size: 1.25rem;
 }
 
 #errorResult {
   text-align: justify;
   float: right;
-}
-
-#form {
-  float: left;
+  font-size: 1.25rem;
+  background-color: #d804043b;
+  padding: .8rem;
+  margin: .8rem;
 }
