@@ -2,18 +2,16 @@
   display: none;
 }
 
-#pythonResult {
+#pythonResult, #swiftResult, #javascriptResult, #csharpResult {
   text-align: justify;
+  float: right;
 }
 
-#swiftResult {
+#errorResult {
   text-align: justify;
+  float: right;
 }
 
-#javascriptResult {
-  text-align: justify;
-}
-
-#csharpResult {
-  text-align: justify;
+#form {
+  float: left;
 }

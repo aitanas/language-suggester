@@ -20,31 +20,28 @@ function getResult (event) {
   convertedHex = Math.floor(parseInt(convertedHex, 16)) / 1000; // makes converted hex a float value 0-~1500
   convertedHex = parseInt(convertedHex);
 
-  let nameResult; 
-
 // branching logic
 // program: websites, apps, iOS, bees
 // whyProgram: genuine lols money confusion
 // oneFear: birds, snakes, words
 // colors: number thresholds, i.e. >=1000, >9000
 if (name && whatProgram && whyProgram && oneFear && convertedHex) {
-  if (whatProgram === webpages || bees && whyProgram && oneFear === snakes || birds) {
-    document.getElementById("javascriptResult").removeAttribute("class");
-    nameResult = name;
-  } else if (whatProgram === iOS && whyProgram && oneFear === words || snakes) {
-    document.getElementById("swiftResult").removeAttribute("class");
-    nameResult = name;
-  } else if (whatProgram === apps || bees && whyProgram && oneFear === snakes) {
-    document.getElementById("csharpResult").removeAttribute("class");
-    nameResult = name;
-  } else if (whatProgram === apps || bees && whyProgram && oneFear != snakes) {
+  if (whatProgram === apps || whatProgram === bees && oneFear != snakes) {
     document.getElementById("pythonResult").removeAttribute("class");
-    nameResult = name;
+    document.querySelector("span#nameHere").innerText = name; 
+  } else if (whatProgram === webpages && oneFear === snakes || birds) {
+    document.getElementById("javascriptResult").removeAttribute("class");
+    document.querySelector("span#nameHere").innerText = name;
+  } else if (whatProgram === iOS && oneFear === words || snakes) {
+    document.getElementById("swiftResult").removeAttribute("class");
+    document.querySelector("span#nameHere").innerText = name;
+  } else {
+    document.getElementById("csharpResult").removeAttribute("class");
+    document.querySelector("span#nameHere").innerText = name;
   }
 } else {
   document.getElementById("errorResult").removeAttribute("class");
 }
-  document.getElementById("nameHere").innerText = nameResult;
 }
 
 window.addEventListener("load", function() {
