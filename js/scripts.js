@@ -10,10 +10,6 @@ function getResult (event) {
   event.preventDefault();
   hideResults();
 
-  window.addEventListener("load", function() {
-    document.getElementById("form").addEventListener("submit", getResult);
-  });
-
   const name = document.getElementById("name").value;
   const whatProgram = document.querySelector("input[name='whatProgram']:checked").value;
   const whyProgram = document.querySelector("input[name='whyProgram']:checked").value;
@@ -45,3 +41,7 @@ if (name && whatProgram && whyProgram && oneFear && convertedHex) {
   document.getElementById("errorResult").removeAttribute("class");
 }
 }
+
+window.addEventListener("load", function() {
+  document.getElementById("form").addEventListener("submit", getResult);
+}); 
