@@ -12,22 +12,41 @@
     </div>
     <form id="form">
       <div class="nameSection">
-        <label for="name">Welcome! Please enter your <strong>name</strong>.</label>
+        <label for="name"><h3>Welcome! Please enter your <strong>name</strong>.</h3></label><br>
         <input type="text" name="name" id="name" placeholder="what's your name?">
       </div>
       <div class="radioSection">
         <h3>First and foremost, what would you like to program?</h3>
-        <input type="radio" name="flavor" value="webpages" id="webpages" checked>
-        <label for="choc">Webpages!</label><br>
-        <input type="radio" name="flavor" value="apps" id="apps">
-        <label for="van">Mobile apps!</label><br>
-        <input type="radio" name="flavor" value="bees" id="bees">
-        <label for="cookies">Bees?</label><br>
+        <input type="radio" name="program" value="webpages" id="webpages" checked>
+        <label for="webpages">Webpages!</label><br>
+        <input type="radio" name="program" value="apps" id="apps">
+        <label for="apps">Mobile apps!</label><br>
+        <input type="radio" name="program" value="iOS" id="iOS">
+        <label for="iOS">iOS-specific programs!</label><br>
+        <input type="radio" name="program" value="bees" id="bees">
+        <label for="bees">Bees?</label><br>
+
+        <h3>What are you most afraid of?</h3>
+        <input type="radio" name="oneFear" value="birds" id="birds" checked>
+        <label for="birds">Birds. Have you <em>seen</em> "Birdemic"? Or Hitchcock's "The Birds"?</label><br>
+        <input type="radio" name="oneFear" value="snakes" id="snakes">
+        <label for="snakes">It's gotta be snakes. Especially on planes.</label><br>
+        <input type="radio" name="oneFear" value="words" id="words">
+        <label for="words">Wordy programming languages.</label><br>
       </div>
-      <button type="submit">Submit for your fate</button>
+      <button type="submit">*merida voice* submit for yer fate</button>
     </form>
-    <div id="results" class="hidden">
-      A result will go here
+    <div id="pythonResult" class="hidden">
+      <p>Python result will go here</p>
+    </div>
+    <div id="csharpResult" class="hidden">
+      <p>C# result will go here</p>
+    </div>
+    <div id="javascriptResult" class="hidden">
+      <p>JavaScript result will go here</p>
+    </div>
+    <div id="swiftResult" class="hidden">
+      <p>Swift result will go here</p>
     </div>
   </div>
 </body>
