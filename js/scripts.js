@@ -2,6 +2,7 @@
 
 // BRANCHING
 // program: websites, apps, iOS, bees
+// whyProgram: genuine lols money confusion
 // oneFear: birds, snakes, words
 // colors: hexadecimal code stuff?? RNG? convert hex code to integer, number thresholds? >=1000, >9000
 function getResult (event) {
@@ -14,10 +15,26 @@ function getResult (event) {
 
   // converts hexadecimal to float
   function convertHex (hexInput) {
-  let convertedHex = hexInput.slice(-5);
-  convertedHex = Math.floor(parseInt(convertedHex, 16)) / 1000;
-  return convertedHex
+    let convertedHex = hexInput.slice(-5);
+    convertedHex = Math.floor(parseInt(convertedHex, 16)) / 1000;
+    return convertedHex
   }
+
+// branching logic
+if (whatProgram && whyProgram && oneFear && convertedHex) {
+  if (whatProgram === websites && whyProgram && oneFear === snakes || birds && convertedHex >=500) {
+    javascriptResult;
+  } else if (whatProgram === iOs && whyProgram && oneFear === words || snakes && convertedHex <= 1000) {
+    swiftResult;
+  } else if (whatProgram === apps && whyProgram && oneFear === snakes && !convertedHex || convertedHex < 500) {
+    csharpResult;
+  } else if (whatProgram === apps || bees && whyProgram && oneFear === !snakes && convertedHex ) {
+    pythonResult;
+  }
+} else {
+  Error
+}
+
 
   document.getElementById("nameHere").innerText = result;
 
