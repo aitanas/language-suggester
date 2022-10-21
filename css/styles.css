@@ -2,6 +2,17 @@
   display: none;
 }
 
+body {
+  background:radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+h2 {
+  display: block;
+  width: 25%;
+  text-align: center;
+  font-size: 3rem;
+}
+
 h3 {
   font-size: 1.9rem;
   font-weight: 300;
@@ -19,33 +30,61 @@ h3 {
 }
 
 .jumbotron {
-  background-image: linear-gradient(#AA0000, #ffa564, #fff);
+  background: none;
   border-radius: 0rem;
+  height: 225px;
 }
 
-.colorPicker {
+.container {
+  background-color: rgba(255, 255, 255, 0.532);
+}
+
+.questionBg {
   padding: .8rem;
   line-height: 1.8rem;
   display: block;
-  background-color: rgba(153, 101, 122, 0.796);
   border-radius: .75rem;
   margin-bottom: 1rem;
   margin-top: .5rem;
-  width: 50%;
+  width: 100%;
+}
+
+.questionBg:hover {
+  padding: .8rem;
+  line-height: 1.8rem;
+  display: block;
+  background-color: rgba(239, 239, 239, 0.523);
+  border-radius: .75rem;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  width: 100%;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #c0567d;
+  border-color: #c0567d;
+  margin-bottom: 1rem;
 }
 
 #pythonResult, #swiftResult, #javascriptResult, #csharpResult {
   text-align: justify;
-  float: right;
   font-size: 1.25rem;
+  padding: 1rem;
+  line-height: 1.8rem;
+  background-color: rgba(239, 239, 239, 0.523);
+  border-radius: .75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 #errorResult {
   text-align: justify;
-  float: right;
   font-size: 1.25rem;
   background-color: #d804043b;
-  padding: .8rem;
-  margin: .8rem;
-  
+  padding: 1rem;
+  border-radius: .75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }

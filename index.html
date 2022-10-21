@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng-US">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
@@ -14,30 +15,38 @@
       <p class="lead">Want to learn to program? Find out which language you should start with right here!</p>
     </div>
     <form id="form">
-
-          <label for="name"><h3>Welcome! Please enter your <strong>name</strong>.</h3></label>
-          <input type="text" class="form-control" name="name" id="name" placeholder="nice to meet you :)" width="500px">
-
-          <h3>First and foremost, <strong>what would you program</strong>?</h3>
-          <input type="radio" name="whatProgram" value="webpages" id="webpages" checked>
-          <label for="webpages">Webpages!</label><br>
-          <input type="radio" name="whatProgram" value="apps" id="apps">
-          <label for="apps">Mobile apps!</label><br>
-          <input type="radio" name="whatProgram" value="iOS" id="iOS">
-          <label for="iOS">iOS-specific programs!</label><br>
-          <input type="radio" name="whatProgram" value="bees" id="bees">
-          <label for="bees">Bees?</label><br>
-
+      <div class="questionBg">
+        <label for="name"><h3>Welcome! Please enter your <strong>name</strong>.</h3></label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="nice to meet you :)">
+      </div>
+      <div class="questionBg">
+        <h3>First of all, <strong>what would you program</strong>?</h3>
+        <input type="radio" name="whatProgram" value="webpages" id="webpages" checked>
+        <label for="webpages">Webpages!</label><br>
+        <input type="radio" name="whatProgram" value="apps" id="apps">
+        <label for="apps">Mobile apps!</label><br>
+        <input type="radio" name="whatProgram" value="iOS" id="iOS">
+        <label for="iOS">iOS-specific programs!</label><br>
+        <input type="radio" name="whatProgram" value="bees" id="bees">
+        <label for="bees">Bees?</label><br>
+        </div>
+      <div class="questionBg">
+        <h3><strong>Why</strong> do you want to learn programming?</h3>
+        <input type="radio" name="whyProgram" value="genuine" id="genuine" checked>
+        <label for="genuine">I love building things and problem-solving!</label><br>
+        <input type="radio" name="whyProgram" value="confusion" id="confusion">
+        <label for="confusion">You mean I actually have to do stuff?</label><br>
+      </div>
+      <div class="questionBg">
         <h3>What are you <strong>most afraid</strong> of?</h3>
         <input type="radio" name="oneFear" value="birds" id="birds" checked>
-        <label for="birds">Birds. Have you <em>seen</em> "Birdemic"? Or Hitchcock's "The Birds"?</label><br>
+        <label for="birds">Birds. Have you <em>seen</em> Hitchcock's 'The Birds?'</label><br>
         <input type="radio" name="oneFear" value="snakes" id="snakes">
         <label for="snakes">It's gotta be snakes. Especially on planes.</label><br>
         <input type="radio" name="oneFear" value="words" id="words">
         <label for="words">Wordy programming languages.</label><br>
-
-
-      <div class="colorPicker">
+      </div>
+      <div class="questionBg">
         <label for="colorPick"><h3>Pick a color; any color.</h3></label><br>
         <input type="color" name="colorPick" id="colorPick">
       </div>
@@ -47,25 +56,38 @@
     </form>
 
     <div id="pythonResult" class="hidden">
+      <h2><i class="bi bi-lightning-charge"></i><br></h2>
       <h3>You should learn <strong>Python</strong>!</h3>
       <hr class="my-4">
-      <p class="lead text-wrap">Hey, <span class="nameHere">______</span>. Python sounds like a great match for you! Python is a popular language used in many different applications.</p>
+      <p class="lead text-wrap">Hey, <span class="nameHere"> </span>. Python sounds like a great match for you! <br></p>  
     </div>
 
     <div id="csharpResult" class="hidden">
-      <p>Hey there <span class="nameHere"> </span>! C# sounds like a good choice for you.</p>
+      <h2><i class="bi bi-code-square"></i><br></h2>
+      <h3>You should learn <strong>C#</strong>!</h3>
+      <hr class="my-4">
+      <p>Hey <span class="nameHere"> </span>! C# sounds like a good choice for you.<br></p>
     </div>
 
     <div id="javascriptResult" class="hidden">
-      <p><span class="nameHere"> </span>, it seems like JavaScript is the language for you!</p>
+      <h2><i class="bi bi-stars"></i><br></h2>
+      <h3>You should learn <strong>JavaScript</strong>!</h3>
+      <hr class="my-4">
+      <p>Hey <span class="nameHere"> </span>, it seems like JavaScript is the language for you!<br></p>
     </div>
 
     <div id="swiftResult" class="hidden">
-      <p>Eyyy <span class="nameHere"> </span>, you'd love spreading your wings with Swift!</p>
+      <h2><i class="bi bi-apple"></i><br></h2>
+      <h3>You should learn <strong>Swift</strong>!</h3>
+      <hr class="my-4">
+      <p>Hey <span class="nameHere"> </span>, you'd love spreading your wings with Swift!<br></p>
     </div>
 
     <div id="errorResult" class="hidden">
-      <p>Woah, friend, you've gotta tell me your name first!</p>
+      <h2><i class="bi bi-bug"></i><br></h2>
+      <h3><strong>Whoops, that's an error.</strong></h3>
+      <hr class="my-4">
+      <p>Looks like you've gotta tell me your name first!<br></p>
     </div>
   </div>
 </body>

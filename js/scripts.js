@@ -6,7 +6,7 @@ function hideResults() {
   document.getElementById("errorResult").setAttribute("class", "hidden");
 }
 
-function getResult (event) {
+function getResult(event) {
   event.preventDefault();
   hideResults();
 
@@ -35,7 +35,7 @@ function getResult (event) {
   }
 }
 
-// calls getResult function when submit button is pressed via Event Listener
+// calls getResult function when submit button is clicked (via Event Listener)
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", getResult);
