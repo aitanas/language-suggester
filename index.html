@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="eng-US">
 <head>
-
-
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Programming Language Suggester</title>
 </head>
 <body>
@@ -11,8 +11,24 @@
       <h1>Programming Language Suggester</h1>
     </div>
     <form id="form">
-      
+      <div class="nameSection">
+        <label for="name">Welcome! Please enter your <strong>name</strong>.</label>
+        <input type="text" name="name" id="name" placeholder="what's your name?">
+      </div>
+      <div class="radioSection">
+        <h3>First and foremost, what would you like to program?</h3>
+        <input type="radio" name="flavor" value="webpages" id="webpages" checked>
+        <label for="choc">Webpages!</label><br>
+        <input type="radio" name="flavor" value="apps" id="apps">
+        <label for="van">Mobile apps!</label><br>
+        <input type="radio" name="flavor" value="bees" id="bees">
+        <label for="cookies">Bees?</label><br>
+      </div>
+      <button type="submit">Submit for your fate</button>
     </form>
+    <div id="results" class="hidden">
+      A result will go here
+    </div>
   </div>
 </body>
 </html>
