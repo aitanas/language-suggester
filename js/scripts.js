@@ -12,14 +12,8 @@ function getResult(event) {
 
   const name = document.getElementById("name").value;
   const whatProgram = document.querySelector("input[name='whatProgram']:checked").value;
-  const whyProgram = document.querySelector("input[name='whyProgram']:checked").value;
   const oneFear = document.querySelector("input[name='oneFear']:checked").value;
-  const hexInput = document.getElementById("colorPick").value;
-  document.querySelector("span.nameHere").innerText = name;
-  // converts hexadecimal to float
-  let convertedHex = hexInput.slice(-5); // removes # from hexadecimal input
-  convertedHex = Math.floor(parseInt(convertedHex, 16)) / 1000; // makes converted hex a float value 0-~1500
-  convertedHex = parseInt(convertedHex);
+  document.querySelectorAll("span.nameHere").innerText = name;
 
   // branching logic
   if ((whatProgram === "apps" || whatProgram === "bees") && oneFear != "snakes" && name) {
